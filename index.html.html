@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> Black & White</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+            *{
+                margin:0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Roboto', sans-serif;
+            }
+            body{
+                background: #232526;
+                background: -webkit-linear-gradient(to bottom, #414345, #232526);
+                background: linear-gradient(to bottom, #414345, #232526);
+
+            }
+            h2{
+                color: #fff;
+                text-align: center;
+                font-size: 5em;
+                margin-top: 5%;
+            }
+            .contenedor{
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                background: rgba(30, 30, 31, 0.6);
+            }
+            .hijo{
+                height: 35%;
+                width: 15%;
+                filter: grayscale(100%);
+            }
+            .hijo:nth-child(1){
+                background: url('img/1.jpg') no-repeat center;
+                background-size: cover;
+            }
+                .hijo:nth-child(1):hover{
+                    background: url('img/2.jpg');
+                    background-size: cover;
+                    filter: grayscale(0%);
+                }
+            .hijo:nth-child(2){
+                background: url('img/3.jpg');
+                background-size: cover;
+            }
+                .hijo:nth-child(2):hover{
+                    background: url('img/4.jpg');
+                    background-size: cover;
+                    filter: grayscale(0%);
+                }
+            .hijo:nth-child(3){
+                background: url('img/5.jpg');
+                background-size: cover;
+            }
+                .hijo:nth-child(3):hover{
+                    background: url('img/6.jpg');
+                    background-size: cover;
+                    filter: grayscale(0%);
+                }
+            .hijo:nth-child(4){
+                background: url('img/7.jpg');
+                background-size: cover;
+            }
+                .hijo:nth-child(4):hover{
+                    background: url('img/8.jpg');
+                    background-size: cover;
+                    filter: grayscale(0%);
+                }
+            .hijo:nth-child(5){
+                background: url('img/9.jpg');
+                background-size: cover;
+            }
+                .hijo:nth-child(5):hover{
+                    background: url('img/10.jpg');
+                    background-size: cover;
+                    filter: grayscale(0%);
+                }
+
+            .delays-2s{
+                animation-delay: .5s;
+            }
+            .delays-3s{
+                animation-delay: 1s;
+            }
+            .delays-4s{
+                animation-delay: 1.5s;
+            }
+            .delays-5s{
+                animation-delay: 2s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="hijo animated fadeInRight">
+            </div>
+            <div class="hijo animated fadeInRight delays-2s">
+            </div>
+            <div class="hijo animated fadeInRight delays-3s">
+            </div>
+            <div class="hijo animated fadeInRight delays-4s">
+            </div>
+            <div class="hijo animated fadeInRight delays-5s">
+            </div>
+        </div>
+    </body>
+</html>
